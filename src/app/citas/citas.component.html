@@ -1,0 +1,14 @@
+<h2>Mis Citas</h2>
+<ul class="citas">
+    <li *ngFor="let cita of citas">
+        <button [class.selected]="cita === selectedCita" type="button"
+        (click)="onSelect(cita)">
+            <span class="badge">{{cita.id}}</span>
+            <span class="name">{{cita.name}}</span>
+        </button>
+    </li>
+</ul>
+
+<app-cita-detail [cita] = "selectedCita"></app-cita-detail>
+
+

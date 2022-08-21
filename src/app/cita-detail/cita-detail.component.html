@@ -1,0 +1,10 @@
+<div *ngIf="cita">
+
+    <h2>{{cita.name | uppercase}} Detalles de Cita</h2>
+    <div><span>id: </span>{{cita.id}}</div>
+    <div>
+      <label for="cita-name">Nombre de Cita: </label>
+      <input id="cita-name" [(ngModel)]="cita.name" placeholder="name">
+    </div>
+  
+  </div>
