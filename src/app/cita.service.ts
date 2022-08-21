@@ -11,7 +11,7 @@ export class CitaService {
 
   getCitas(): Observable <Cita[]> {
     const citas = of(Citas);
-    this.messageService.add('Servicio de Cita: Citas Recuperadas')
+    this.messageService.add('Servicio de Citas: Citas Agendadas')
     return citas;
   }
 

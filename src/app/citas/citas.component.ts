@@ -24,7 +24,7 @@ export class CitasComponent implements OnInit {
 
   onSelect(cita: Cita): void {
     this.selectedCita = cita;
-    this.messageService.add('CitasComponent: Selected cita id=${cita.id}');
+    this.messageService.add('Compoente de Cita: Se ha seleccionado la cita con el id=${cita.id}');
   }  
 
   ngOnInit(): void {
