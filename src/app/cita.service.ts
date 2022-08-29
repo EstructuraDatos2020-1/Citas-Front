@@ -15,5 +15,11 @@ export class CitaService {
     return citas;
   }
 
+  getHero(id: number): Observable<Cita> {
+    
+    const hero = Citas.find(h => h.id === id)!;
+    this.messageService.add(`CitaService: fetched hero id=${id}`);
+    return of(hero);
+  }
   constructor(private messageService: MessageService) { }
 }

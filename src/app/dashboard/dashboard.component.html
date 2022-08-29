@@ -1,0 +1,7 @@
+<h2>Top Citas</h2>
+<div class="citas-menu">
+  <a *ngFor="let cita of citas"
+    routerLink="/detail/{{cita.id}}">
+    {{cita.name}}
+  </a>
+</div>

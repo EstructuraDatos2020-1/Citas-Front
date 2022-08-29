@@ -8,13 +8,15 @@ import { CitasComponent } from './citas/citas.component';
 import { FormsModule } from '@angular/forms';
 import { CitaDetailComponent } from './cita-detail/cita-detail.component';
 import { MessagesComponent } from './messages/messages.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CitasComponent,
     CitaDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
