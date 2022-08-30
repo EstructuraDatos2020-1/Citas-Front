@@ -14,10 +14,11 @@ export class DashboardComponent implements OnInit {
 
   getCitas(): void {
     this.citaService.getCitas()
-      .subscribe(citas => this.citas = citas.slice(1, 4));
+      .subscribe(citas => this.citas = citas.slice(1, 3));
   }
 
   ngOnInit(): void {
+    this.getCitas
   }
 
 }
